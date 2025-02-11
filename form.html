@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="fr
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Fomulaire de contact</title>
+</head>
+<body>
+    
+<div class="container"><!-- 1ère partie html de base -->
+    <div class="row"><!-- colonnes viendront ici -->
+        <div class="content"><!-- colonne de gauche -->
+            <h1>Contactez-moi</h1>
+            <p>vous avez des questions ? ...</p>
+            <div class="contact-info">
+                <p><strong>Coordonnées :</strong>4 bis rue du clos aux biches, 78910 Orgerus</p>
+                <p><strong>Téléphone :</strong>07 83 38 02 22</p>
+                <p><strong>Email :</strong>stefanbrinzei8@gmail.com</p>
+            </div>
+        </div>
+        <div class="form container"><!-- colonne de droite -->
+            <div class="contact-banner">
+                Je vous réponds sous 24h ouvrées
+            </div>
+            <div class="contact-form">
+                <form id="contactForm" method="POST"><!-- Champ du formulaire -->
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="nom" required placeholder="Nom complet">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="email" required placeholder="Adresse email">
+                    </div>
+                    <!-- HTML pour le select -->
+                    <div class="form-group">
+                        <select class="form-control selct-custom" name="sujet" required>
+                            <option value="" disabled selected>Choisissez un sujet</option>
+                            <option value="information">Demande d'information</option>
+                            <option value="devis">Demande de devis</option>
+                            <option value="support">Support technique</option>
+                            <option value="reclamation">Réclamation</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="textarea" class="form-control" name="message" required placeholder="Votre message">
+                    </div>
+                    <button type="submit" class="submit-btn"> Envoyer le message
+
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="form.js"></script>
+</body>
+</html>
